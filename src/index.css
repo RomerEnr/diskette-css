@@ -1,0 +1,60 @@
+@import "reset.css";
+
+body {
+  background-color: aqua;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diskette {
+  height: 600px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #2c2c2b;
+}
+
+.diskette-top-container {
+  width: 540px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.metal-container {
+  width: 350px;
+  height: 210px;
+  background: black;
+  display: flex;
+  justify-content: right;
+}
+
+.metal {
+  width: 300px;
+  height: 210px;
+  background: white;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.metal-hole {
+  width: 50px;
+  height: 150px;
+  background: black;
+  margin-right: 20px;
+}
+
+.diskette-bottom-container {
+  width: 90%;
+  height: 360px;
+  border: 2px solid white;
+}

@@ -1,5 +1,9 @@
 @import "reset.css";
 
+:root {
+  --color-diskette: #2c2c2b;
+}
+
 body {
   background-color: aqua;
 }
@@ -19,7 +23,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background: #2c2c2b;
+  background: var(--color-diskette);
+  border-radius: 15px;
 }
 
 .diskette-top-container {
@@ -35,6 +40,8 @@ body {
   background: black;
   display: flex;
   justify-content: right;
+  border-end-start-radius: 20px;
+  box-shadow: 0 0 15px rgb(107 106 106) inset;
 }
 
 .metal {
@@ -44,6 +51,8 @@ body {
   display: flex;
   justify-content: right;
   align-items: center;
+  border-end-start-radius: 8px;
+  border-end-end-radius: 5px;
 }
 
 .metal-hole {
@@ -56,5 +65,23 @@ body {
 .diskette-bottom-container {
   width: 90%;
   height: 360px;
-  border: 2px solid white;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.sticker {
+  width: 350px;
+  height: 290px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 60px;
+  border: 1px solid black;
 }

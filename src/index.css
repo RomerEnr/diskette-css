@@ -1,11 +1,13 @@
 @import "reset.css";
 
 :root {
-  --color-diskette: #2c2c2b;
+  --color-diskette: rgb(39 39 42);
+  --body-color: rgb(245 158 1);
+  --separacion: 20px;
 }
 
 body {
-  background-color: aqua;
+  background-color: var(--body-color);
 }
 
 .container {
@@ -22,9 +24,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: var(--separacion);
   background: var(--color-diskette);
   border-radius: 15px;
+  box-shadow: -4px -4px 10px  rgb(105 101 101)  inset;
 }
 
 .diskette-top-container {
@@ -41,18 +44,21 @@ body {
   display: flex;
   justify-content: right;
   border-end-start-radius: 20px;
-  box-shadow: 0 0 15px rgb(107 106 106) inset;
+  box-shadow: 0 0 10px 2px rgb(105 101 101) inset;
 }
 
 .metal {
   width: 300px;
   height: 210px;
-  background: white;
+
+  /* background: white; */
+  background: rgb(222 221 221);
   display: flex;
   justify-content: right;
   align-items: center;
   border-end-start-radius: 8px;
   border-end-end-radius: 5px;
+  box-shadow: 0 0 10px 2px rgb(105 101 101) inset;
 }
 
 .metal-hole {
@@ -60,6 +66,7 @@ body {
   height: 150px;
   background: black;
   margin-right: 20px;
+  box-shadow: 0 0 10px 2px rgb(105 101 101) inset;
 }
 
 .diskette-bottom-container {
@@ -74,14 +81,20 @@ body {
 .sticker {
   width: 350px;
   height: 290px;
-  background-color: white;
+
+  /* background: repeating-linear-gradient(to bottom, black 0 4px, white 2px 60px); */
+
+  background-color: rgb(222 222 222);
   border-radius: 5px;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0 0 10px 2px rgb(105 101 101) inset;
 }
 
 .line {
-  width: 60px;
+  width: 80%;
+  border-bottom: 4px;
   border: 1px solid black;
 }

@@ -28,6 +28,11 @@ body {
   background: var(--color-diskette);
   border-radius: 15px;
   box-shadow: -4px -4px 10px  rgb(105 101 101)  inset;
+  transition: transform 0.5s ease-in-out;
+}
+
+.diskette:hover {
+  transform: rotate(5deg) scale(1.1);
 }
 
 .diskette-top-container {

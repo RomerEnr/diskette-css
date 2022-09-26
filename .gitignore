@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-.bin
+.auto-deploy.sh
 
 # Editor directories and files
 .vscode/*
